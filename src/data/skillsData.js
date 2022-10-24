@@ -1,4 +1,6 @@
  export const skillsData = [
+    'Product Management',
+    'Project Management',
     'HTML',
     'CSS',
     'Bootstrap',
@@ -25,4 +27,5 @@
     'Blender',
     'Unity',
     'Microsoft Office',
+    'Tableau',
 ]

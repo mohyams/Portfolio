@@ -80,6 +80,9 @@ import kafka from '../assets/svg/skills/kafka.svg'
 import salesforce from '../assets/svg/skills/salesforce.svg'
 import androidstudio from '../assets/svg/skills/androidstudio.svg'
 import googledatastudio from '../assets/svg/skills/googledatastudio.svg'
+import tableau from '../assets/svg/skills/tableau.svg'
+import productmanagement from '../assets/svg/skills/productmanagement.svg'
+import projectmanagement from '../assets/svg/skills/projectmanagement.svg'
 
 
 export const skillsImage = (skill) => {
@@ -245,6 +248,12 @@ export const skillsImage = (skill) => {
             return androidstudio;
         case 'google data studio':
             return googledatastudio;
+        case 'tableau':
+            return tableau;
+        case 'product management':
+            return productmanagement;
+        case 'project management':
+            return projectmanagement;
         default:
             break;
     }

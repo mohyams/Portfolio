@@ -10,14 +10,13 @@ function Main() {
             <Helmet>
                 <title>{headerData.name}</title>
             </Helmet>
-
             <Navbar />        
             <Landing />
             <About />
             <Education />
-            <Skills />
             <Experience />
             <Projects />
+            <Skills />
             <Achievement />
             <Contacts />
         </div>

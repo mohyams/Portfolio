@@ -1,5 +1,5 @@
 import React,{ useContext } from 'react';
-import Marquee from "react-fast-marquee";
+import {Grid} from '@material-ui/core/';
 
 import './Skills.css'
 
@@ -23,7 +23,7 @@ function Skills() {
             </div>
             <div className="skillsContainer">
                 <div className="skill--scroll">
-                    <Marquee 
+                    {/* <Marquee 
                         gradient={false} 
                         speed={80} 
                         pauseOnHover={true}
@@ -31,16 +31,20 @@ function Skills() {
                         delay={0}
                         play={true} 
                         direction="left"
-                    >
+                    > */}
+                    <Grid container spacing={10}>
                         {skillsData.map((skill, id) => (
+                            <Grid item xs={2} spacing={3}>
                             <div className="skill--box" key={id} style={skillBoxStyle}>
                                 <img src={skillsImage(skill)} alt={skill} />
                                 <h3 style={{color: theme.tertiary}}>
                                     {skill}
                                 </h3>
                             </div>
+                            </Grid>
                         ))}
-                    </Marquee>
+                        </Grid>
+                    {/* </Marquee> */}
                 </div>
             </div>
         </div>

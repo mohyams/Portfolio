@@ -23,8 +23,8 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear, description}
     }));
 
     const classes = useStyles();
-
-
+    let i = 0;
+    console.log(typeof(description));
     return (
         <Fade bottom>
             <div key={id} className={`experience-card ${classes.experienceCard}`}>
@@ -35,6 +35,12 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear, description}
                     <h6 style={{color: theme.primary}}>{startYear} - {endYear}</h6>
                     <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
                     <h5 style={{color: theme.tertiary80}}>{company}</h5>
+                    {description.map(d=>{
+                        i++;
+                        return <h6 key={i} style={{color: theme.tertiary80}}>{d}</h6>
+                    })}
+                    
+                    
                 </div>
             </div>
         </Fade>   

@@ -12,8 +12,6 @@ function App() {
 
   const { theme } = useContext(ThemeContext);
 
-  console.log(`color:${theme.primary};`);
-
   return (
     <div className="app">
       <Router>
@@ -21,7 +19,6 @@ function App() {
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/projects" exact component={ProjectPage} />
-
           <Redirect to="/" />
         </Switch>
       </Router>
