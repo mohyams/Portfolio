@@ -212,7 +212,7 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#resume'
+                                to='/#experience'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -222,7 +222,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                        Experience
                                     </span>
                                 </div>
                             </NavLink>
