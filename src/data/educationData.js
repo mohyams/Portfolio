@@ -13,7 +13,7 @@ export const educationData = [
         course: 'B.Tech in Information Technology',
         startYear: 'August 2016',
         endYear: 'October 2020',
-        grade: '3.46'
+        grade: '3.5'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const educationData = [
         course: 'Higher Secondary Education',
         startYear: 'June 2014',
         endYear: 'June 2016',
-        grade: '90.31'
+        grade: '90.31 %'
     },
     
     
